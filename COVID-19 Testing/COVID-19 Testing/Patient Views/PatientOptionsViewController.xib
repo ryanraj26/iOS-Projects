@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PatientOptionsViewController" customModule="Assignment_7" customModuleProvider="target">
+            <connections>
+                <outlet property="btnLogin" destination="MFq-iU-0mP" id="GSs-Hr-bji"/>
+                <outlet property="btnRegister" destination="PVW-4w-4Lu" id="rW5-gE-Ljq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTU-P0-e8g">
+                    <rect key="frame" x="152" y="120" width="110" height="34"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="26"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Would you like to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dzg-DD-ZAr">
+                    <rect key="frame" x="102.5" y="208" width="209" height="34"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="26"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qz8-fy-LQW">
+                    <rect key="frame" x="191" y="390" width="33" height="34"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="26"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFq-iU-0mP">
+                    <rect key="frame" x="75" y="298" width="275" height="41"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="Login">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="loginClicked:" destination="-1" eventType="touchUpInside" id="nr3-CB-aMQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVW-4w-4Lu">
+                    <rect key="frame" x="75" y="479" width="275" height="41"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="Register">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="registerClicked:" destination="-1" eventType="touchUpInside" id="Lid-Hj-dP2"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="MFq-iU-0mP" firstAttribute="top" secondItem="Dzg-DD-ZAr" secondAttribute="bottom" constant="56" id="0pP-qJ-ELI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PVW-4w-4Lu" secondAttribute="trailing" constant="64" id="8nx-xH-wdz"/>
+                <constraint firstItem="MFq-iU-0mP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="75" id="FD2-qk-viY"/>
+                <constraint firstItem="qz8-fy-LQW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="191" id="Gqz-Xc-AET"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qz8-fy-LQW" secondAttribute="trailing" constant="190" id="L9R-6j-sYA"/>
+                <constraint firstItem="Dzg-DD-ZAr" firstAttribute="top" secondItem="tTU-P0-e8g" secondAttribute="bottom" constant="54" id="Lwa-KG-skB"/>
+                <constraint firstItem="tTU-P0-e8g" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="UYJ-Nx-yBW"/>
+                <constraint firstItem="PVW-4w-4Lu" firstAttribute="top" secondItem="qz8-fy-LQW" secondAttribute="bottom" constant="55" id="UdV-Js-27M"/>
+                <constraint firstItem="Dzg-DD-ZAr" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="VMA-Dg-cHj"/>
+                <constraint firstItem="qz8-fy-LQW" firstAttribute="top" secondItem="MFq-iU-0mP" secondAttribute="bottom" constant="51" id="ei9-oG-zNK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MFq-iU-0mP" secondAttribute="trailing" constant="64" id="r7A-yR-N6f"/>
+                <constraint firstItem="tTU-P0-e8g" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="76" id="uhJ-e4-6HJ"/>
+                <constraint firstItem="PVW-4w-4Lu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="75" id="uqj-2g-AEg"/>
+            </constraints>
+            <point key="canvasLocation" x="130" y="59"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
